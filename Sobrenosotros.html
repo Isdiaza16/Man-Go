@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre más sobre Man-Go, una marca comprometida con el medio ambiente y productos 100% orgánicos.">
+    <title>Man-Go - Quiénes Somos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos generales */
+        body {
+            background-color: #F7B436;
+            font-family: 'Quicksand', sans-serif;
+            color: #555;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #f7b436;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            color: floralwhite;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.4em;
+        }
+
+        /* Navegación */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #f7b436;
+        }
+
+        /* Contenedor principal */
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff5e6;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Estilos de la sección */
+        .section h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2em;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            line-height: 1.6;
+            text-align: justify;
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        /* Carrusel */
+        .carousel {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            margin: 30px auto;
+            overflow: hidden;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .carousel-images {
+            display: flex;
+            animation: slide 20s infinite;
+        }
+
+        .carousel-images img {
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        @keyframes slide {
+            0%, 20% { transform: translateX(0); }
+            25%, 45% { transform: translateX(-100%); }
+            50%, 70% { transform: translateX(-200%); }
+            75%, 95% { transform: translateX(-300%); }
+            100% { transform: translateX(-400%); }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f7b436;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .section p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Man-Go</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+                <li><a href="mision.html">Misión y Visión</a></li>
+                <li><a href="nuestrocame.html">Nuestro CAME</a></li>
+                <li><a href="nuestrofoda.html">Nuestro FODA</a></li>
+                <li><a href="nuestrosprecios.html">Nuestros precios</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
+                <li><a href="Formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="section">
+                <h2>Quiénes somos</h2>
+                <p>La identidad de MAN-GO como marca se basa principalmente en nuestro personaje de mango. Queremos ser percibidos como nuestra mascota de marca: un chico relajado, joven y simpático, lleno de buen humor. Nos preocupamos por el medio ambiente y estamos comprometidos con prácticas ecológicas, como el uso de bolsas de papel reciclado, compostaje y cosechas 100% orgánicas.</p>
+            </div>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="Mangochile.jpeg" alt="Delicioso mango con chile">
+                    <img src="Mango.jpeg" alt="Mango fresco y orgánico">
+                    <img src="perfect treat.jpeg" alt="Postre perfecto con mango">
+                    <img src="Mango chile 2.jpeg" alt="Mango con chile en trozos">
+                    <img src="Mango efect.jpeg" alt="Bebida refrescante de mango">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        © 2023 <a href="index.html">Man-Go</a>. Todos los derechos reservados.
+    </footer>
+</body>
+</html>

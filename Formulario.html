@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Man-Go</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos generales */
+        body {
+            background-color: #F7B436;
+            font-family: 'Quicksand', sans-serif;
+            color: #555;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #f7b436;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            color: floralwhite;
+            font-size: 2.2em;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            background-color: #f7b436;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #f7b436;
+        }
+
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff5e6;
+        }
+
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            width: 100%;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .checkbox-container input {
+            margin-right: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #f7b436;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulario</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+                <li><a href="mision.html">Misión y Visión</a></li>
+                <li><a href="nuestrocame.html">Nuestro CAME</a></li>
+                <li><a href="nuestrofoda.html">Nuestro FODA</a></li>
+                <li><a href="Nuestrosprecios.html">Nuestros precios</a></li>
+                <li><a href="Contactanos.html">Contáctanos</a></li>
+                <li><a href="Formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="gracias.html" method="POST">
+            <h2>Regístrate</h2>
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" placeholder="Tu edad" required>
+
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero" required>
+                <option value="">Selecciona tu género</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+                <option value="prefiero_no_decirlo">Prefiero no decirlo</option>
+            </select>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+            <label for="telefono">Número Telefónico:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="1234567890" required>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos">Acepto los términos y condiciones</label>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        © 2023 Man-Go. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
